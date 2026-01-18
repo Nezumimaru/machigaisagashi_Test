@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猪狩工務店の間違い探し</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1><img src="title_logo.png" alt="間違い探し" class="title-logo"></h1>
+            <p class="subtitle">全部で8つの間違いがあるよ！</p>
+            <p class="instruction-text">下の画像をクリックしてね！</p>
+            <button id="backToMenuBtn" class="back-btn" style="display: none;">一覧に戻る</button>
+        </header>
+
+        <!-- 一覧選択画面 -->
+        <div id="levelMenu" class="level-menu">
+            <div class="level-item" data-level="0">
+                <img src="game_image.jpg" class="level-thumb">
+                <p>2026年2月号</p>
+            </div>
+            <div class="level-item" data-level="1">
+                <img src="202509.png" class="level-thumb">
+                <p>2025年9月号</p>
+            </div>
+            <div class="level-item" data-level="2">
+                <img src="202512.png" class="level-thumb">
+                <p>2025年12月号</p>
+            </div>
+        </div>
+
+        <div class="game-area" id="gameArea" style="display: none;">
+            <img src="game_image.jpg" alt="間違い探しイラスト" class="game-image" id="gameImage">
+            <!-- 正解の「〇」が表示されるレイヤー -->
+            <div class="markers-layer" id="markersLayer"></div>
+        </div>
+        </main>
+
+        <footer>
+            <div class="status-panel">
+                <div class="counter">
+                    見つけた数: <span id="foundCount">0</span> / 8
+                </div>
+                <div class="life-counter">
+                    ライフ: <span id="lifeCount" class="heart-text">❤❤❤❤</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="hintBtn" class="hint-btn">ヒント</button>
+                <button id="showAnswerBtn" class="show-answer-btn">答え合わせ</button>
+            </div>
+        </footer>
+
+        <!-- クリア時のモーダル -->
+        <div class="modal-overlay" id="clearModal">
+            <div class="modal-content">
+                <h2>🎉 クリア！ 🎉</h2>
+                <p>全部見つかったね、おめでとう！</p>
+                <button onclick="location.reload()" class="replay-btn">もう一度遊ぶ</button>
+            </div>
+        </div>
+
+        <!-- ゲームオーバー時のモーダル -->
+        <div class="modal-overlay" id="gameOverModal">
+            <div class="modal-content game-over-content">
+                <h2>😱 ゲームオーバー 😱</h2>
+                <p>間違いすぎちゃった...</p>
+                <button onclick="location.reload()" class="replay-btn">もう一度挑戦</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 座標測定用デバッグパネル -->
+    <div id="debugPanel"
+        style="display: none; position: fixed; bottom: 10px; right: 10px; background: rgba(255,255,255,0.9); padding: 10px; border: 2px solid #333; border-radius: 8px; z-index: 9999; font-family: sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+        <label style="cursor: pointer; font-weight: bold;"><input type="checkbox" id="debugMode"> 座標測定モード</label><br>
+        <input type="text" id="coordOutput" style="width: 250px; margin-top: 5px; padding: 5px;"
+            placeholder="画像をクリックすると座標が出ます">
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
