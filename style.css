@@ -470,3 +470,72 @@ h1 {
         transform: translate(-50%, -50%) scale(2);
     }
 }
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+
+    /* Make mistake markers smaller on mobile */
+    .mark-circle {
+        width: 25px;
+        height: 25px;
+        border-width: 3px;
+    }
+
+    /* Make text smaller */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .status-panel {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    #foundCount {
+        font-size: 1.5rem;
+    }
+
+    .footer button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    /* Make hint circle dynamic/larger relative to screen if 300px was felt small (which is weird, but let's try % based) */
+    /* Update: If the user says "narrow" (semai), they want it BIGGER. */
+    .hint-circle {
+        width: 150px;
+        /* On mobile, 300px might be too overflowing, but user said "too narrow". Let's stick to size relative to image? */
+        /* Currently it's simple px. If the image is small on mobile, 300px should be covering the whole image. */
+        /* Maybe the user meant "the red circle is too big, and the hint is too narrow" -> 
+           Maybe on mobile the image is actually displayed largely?
+           Let's set markers to 6% of width and hint to 40% of width to be safe and responsive.
+        */
+        width: 50%;
+        height: 0;
+        padding-bottom: 50%;
+        /* Aspect ratio 1:1 */
+        border-width: 4px;
+        border-radius: 50%;
+    }
+
+    .mark-circle {
+        /* Responsive marker size */
+        width: 8%;
+        height: 0;
+        padding-bottom: 8%;
+        /* Make it circular based on width */
+        min-width: 20px;
+        min-height: 20px;
+        /* Reset height/width from default to use padding hack for responsiveness? 
+           Actually, absolute px is safer for touch targets, but visually `25px` is good.
+           Let's go with fixed smaller pixel size for markers.
+        */
+        width: 20px;
+        height: 20px;
+        padding-bottom: 0;
+    }
+}
