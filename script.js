@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
             title: '2026年2月号',
             // もともとの間違いデータ（とりあえずここに移動）
             mistakes: [
-                { id: 1, found: false, areas: [{ x: 94.3, y: 12.1, r: 5 }, { x: 94.3, y: 61.1, r: 5 }] },
-                { id: 2, found: false, areas: [{ x: 86.0, y: 39.0, r: 5 }, { x: 86.0, y: 88.0, r: 5 }] },
-                { id: 3, found: false, areas: [{ x: 56.0, y: 41.4, r: 5 }, { x: 56.0, y: 90.4, r: 5 }] },
-                { id: 4, found: false, areas: [{ x: 53.4, y: 24.4, r: 5 }, { x: 53.4, y: 73.4, r: 5 }] },
-                { id: 5, found: false, areas: [{ x: 7.7, y: 47.4, r: 5 }, { x: 7.7, y: 96.4, r: 5 }] },
-                { id: 6, found: false, areas: [{ x: 11.8, y: 15.8, r: 5 }, { x: 11.8, y: 64.8, r: 5 }] },
-                { id: 7, found: false, areas: [{ x: 53.8, y: 6.9, r: 5 }, { x: 53.8, y: 55.9, r: 5 }] },
-                { id: 8, found: false, areas: [{ x: 40.5, y: 27.6, r: 5 }, { x: 40.5, y: 76.6, r: 5 }] }
+                { id: 1, found: false, areas: [{ x: 84.8, y: 89.0, w: 10.5, h: 6.4 }] },
+                { id: 2, found: false, areas: [{ x: 94.1, y: 61.1, w: 4.1, h: 3.9 }] },
+                { id: 3, found: false, areas: [{ x: 53.6, y: 56.1, w: 4.1, h: 3.3 }] },
+                { id: 4, found: false, areas: [{ x: 55.9, y: 90.0, w: 6.1, h: 2.1 }] },
+                { id: 5, found: false, areas: [{ x: 40.9, y: 76.6, w: 6.6, h: 4.7 }] },
+                { id: 6, found: false, areas: [{ x: 7.7, y: 96.0, w: 2.9, h: 2.1 }] },
+                { id: 7, found: false, areas: [{ x: 12.1, y: 64.9, w: 2.2, h: 3.0 }] },
+                { id: 8, found: false, areas: [{ x: 53.6, y: 74.4, w: 9.6, h: 4.7 }] }
             ]
         },
         {
@@ -31,30 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
             src: '202509.png',
             title: '2025年9月号',
             mistakes: [
-                { id: 1, found: false, areas: [{ x: 95.2, y: 81.0, r: 5 }] },
-                { id: 2, found: false, areas: [{ x: 90.2, y: 93.0, r: 5 }] },
-                { id: 3, found: false, areas: [{ x: 79.7, y: 93.4, r: 5 }] },
-                { id: 4, found: false, areas: [{ x: 76.9, y: 55.4, r: 5 }] },
-                { id: 5, found: false, areas: [{ x: 35.3, y: 83.9, r: 5 }] },
-                { id: 6, found: false, areas: [{ x: 9.1, y: 58.0, r: 5 }] },
-                { id: 7, found: false, areas: [{ x: 32.7, y: 52.7, r: 5 }] },
-                {
-                    id: 8,
-                    found: false,
-                    areas: [
-                        { x: 40.9, y: 75.7, r: 5 },
-                        { x: 40.5, y: 70.1, r: 5 },
-                        { x: 40.5, y: 81.3, r: 5 }
-                    ],
-                    // カスタム表示設定
-                    customMarker: {
-                        x: 40.6,
-                        y: 75.7,
-                        width: '30px',
-                        height: '150px',
-                        borderRadius: '20px'
-                    }
-                }
+                { id: 1, found: false, areas: [{ x: 41.1, y: 76.5, w: 4.1, h: 18.1 }] },
+                { id: 2, found: false, areas: [{ x: 95.3, y: 81.4, w: 3.8, h: 3.1 }] },
+                { id: 3, found: false, areas: [{ x: 90.7, y: 92.0, w: 4.6, h: 6.0 }] },
+                { id: 4, found: false, areas: [{ x: 79.9, y: 93.7, w: 3.3, h: 3.3 }] },
+                { id: 5, found: false, areas: [{ x: 76.8, y: 54.9, w: 3.6, h: 4.3 }] },
+                { id: 6, found: false, areas: [{ x: 36.7, y: 85.5, w: 10.1, h: 6.9 }] },
+                { id: 7, found: false, areas: [{ x: 8.2, y: 57.9, w: 10.0, h: 10.4 }] },
+                { id: 8, found: false, areas: [{ x: 33.3, y: 53.1, w: 9.6, h: 5.2 }] }
             ]
         },
         {
@@ -62,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
             src: '202512.png',
             title: '2025年12月号',
             mistakes: [
-                { id: 1, found: false, areas: [{ x: 84.1, y: 61.3, r: 5 }] },
-                { id: 2, found: false, areas: [{ x: 85.1, y: 86.8, r: 5 }] },
-                { id: 3, found: false, areas: [{ x: 60.6, y: 63.9, r: 5 }] },
-                { id: 4, found: false, areas: [{ x: 56.5, y: 84.9, r: 5 }] },
-                { id: 5, found: false, areas: [{ x: 28.9, y: 63.9, r: 5 }] },
-                { id: 6, found: false, areas: [{ x: 21.5, y: 76.6, r: 5 }] },
-                { id: 7, found: false, areas: [{ x: 23.4, y: 89.5, r: 5 }] },
-                { id: 8, found: false, areas: [{ x: 11.4, y: 92.5, r: 5 }] }
+                { id: 1, found: false, areas: [{ x: 85.9, y: 87.8, w: 8.3, h: 5.3 }] },
+                { id: 2, found: false, areas: [{ x: 84.3, y: 62.3, w: 4.1, h: 4.5 }] },
+                { id: 3, found: false, areas: [{ x: 61.3, y: 64.5, w: 2.2, h: 3.4 }] },
+                { id: 4, found: false, areas: [{ x: 56.5, y: 84.9, w: 2.9, h: 3.0 }] },
+                { id: 5, found: false, areas: [{ x: 22.4, y: 76.6, w: 4.5, h: 4.8 }] },
+                { id: 6, found: false, areas: [{ x: 23.3, y: 90.2, w: 2.8, h: 4.8 }] },
+                { id: 7, found: false, areas: [{ x: 11.3, y: 92.5, w: 4.6, h: 2.3 }] },
+                { id: 8, found: false, areas: [{ x: 29.3, y: 64.5, w: 14.7, h: 7.9 }] }
             ]
         }
     ];
@@ -221,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // デバッグ用要素
     const debugModeCheckbox = document.getElementById('debugMode');
     const coordOutput = document.getElementById('coordOutput');
+    let debugStartPoint = null; // 範囲測定の開始点
 
     // クリックイベント
     gameArea.addEventListener('click', (e) => {
@@ -233,66 +218,113 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // デバッグモード（座標測定）
         if (debugModeCheckbox && debugModeCheckbox.checked) {
-            const coordString = `{ x: ${x.toFixed(1)}, y: ${y.toFixed(1)}, r: 5 },`;
-            coordOutput.value = coordString;
-            coordOutput.select();
+            if (!debugStartPoint) {
+                // 1点目（開始点）
+                debugStartPoint = { x, y };
+                coordOutput.value = "2点目をクリックして範囲などを決定...";
 
-            // 測定ポイントを目立たせる
-            const marker = document.createElement('div');
-            marker.style.position = 'absolute';
-            marker.style.left = x + '%';
-            marker.style.top = y + '%';
-            marker.style.width = '10px';
-            marker.style.height = '10px';
-            marker.style.background = 'blue';
-            marker.style.border = '2px solid white';
-            marker.style.borderRadius = '50%';
-            marker.style.transform = 'translate(-50%, -50%)';
-            marker.style.pointerEvents = 'none';
-            marker.style.zIndex = '9999';
-            markersLayer.appendChild(marker);
+                // 開始点マーカー
+                const marker = document.createElement('div');
+                marker.classList.add('debug-marker'); // クラスで管理してリセット時に消せるようにすると良いが簡易実装
+                marker.style.position = 'absolute';
+                marker.style.left = x + '%';
+                marker.style.top = y + '%';
+                marker.style.width = '6px';
+                marker.style.height = '6px';
+                marker.style.background = 'red';
+                marker.style.transform = 'translate(-50%, -50%)';
+                marker.style.pointerEvents = 'none';
+                marker.style.zIndex = '9999';
+                markersLayer.appendChild(marker);
 
-            console.log(coordString);
+            } else {
+                // 2点目（終了点） -> 範囲計算
+                const start = debugStartPoint;
+                const end = { x, y };
+
+                // 左上、右下を計算
+                const minX = Math.min(start.x, end.x);
+                const maxX = Math.max(start.x, end.x);
+                const minY = Math.min(start.y, end.y);
+                const maxY = Math.max(start.y, end.y);
+
+                // 中心と幅・高さ (%)
+                const w = maxX - minX;
+                const h = maxY - minY;
+                const cx = minX + w / 2;
+                const cy = minY + h / 2;
+
+                const coordString = `{ x: ${cx.toFixed(1)}, y: ${cy.toFixed(1)}, w: ${w.toFixed(1)}, h: ${h.toFixed(1)} },`;
+                coordOutput.value = coordString;
+                coordOutput.select();
+
+                console.log(coordString);
+
+                // 範囲を可視化
+                const rangeBox = document.createElement('div');
+                rangeBox.style.position = 'absolute';
+                rangeBox.style.left = cx + '%';
+                rangeBox.style.top = cy + '%';
+                rangeBox.style.width = w + '%';
+                rangeBox.style.height = h + '%';
+                rangeBox.style.border = '2px solid blue';
+                rangeBox.style.backgroundColor = 'rgba(0, 0, 255, 0.2)';
+                rangeBox.style.transform = 'translate(-50%, -50%)';
+                rangeBox.style.pointerEvents = 'none';
+                rangeBox.style.zIndex = '9999';
+                markersLayer.appendChild(rangeBox);
+
+                // リセット
+                debugStartPoint = null;
+            }
             return; // ゲームのロジックは動かさない
         }
 
         // 下の画像だけクリック可能にする (y < 50% は無視)
-        if (y < 50) {
-            return;
-        }
+        if (y < 50) return;
 
         const coordString = `{ x: ${x.toFixed(1)}, y: ${y.toFixed(1)}, r: 5 },`;
         console.log(coordString);
 
-
-        // 正解判定
         let hit = false;
 
-        mistakes.forEach(mistake => {
-            if (mistake.found) return; // すでに見つけたやつは無視
+        // すでに見つけた間違いかどうかチェック（ループ内で見つかったら終了したいので for...of or simple loop）
+        // forEachだと止まらないので、for keep
+        for (const mistake of mistakes) {
+            if (mistake.found) continue;
 
             // 登録されたすべてのエリア(上・下)に対して判定
-            mistake.areas.forEach(area => {
-                // 距離計算 (アスペクト比を考慮しない簡易円形判定、本来は楕円になるが今回はこれで十分)
-                // 厳密には、画像の比率に合わせて x, y の差分を補正すべきですが、rを調整すればOK
-                // ここでは単純なユークリッド距離(%)で判定します
-                const dx = x - area.x;
-                const dy = y - area.y;
-                // X方向とY方向のスケールが違うので、Yの重みを調整するとより正確ですが、単純化します
-                // ただし、画像が縦長なので Y% の 1% は X% の 1% より実際のピクセル距離が長い可能性があります。
-                // 調整: (dx)^2 + (dy * aspect)^2 <= r^2
-                // aspect = width / height. 画像が 1(W):X(H) なので、 height > width なら aspect < 1.
-                // 一旦単純距離判定で行きます。
+            for (const area of mistake.areas) {
+                let isHit = false;
 
-                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (area.w && area.h) {
+                    // 長方形判定 (x, yを中心とする)
+                    const halfW = area.w / 2;
+                    const halfH = area.h / 2;
+                    if (x >= area.x - halfW && x <= area.x + halfW &&
+                        y >= area.y - halfH && y <= area.y + halfH) {
+                        isHit = true;
+                    }
+                } else {
+                    // 円形判定 (デフォルト)
+                    const dx = x - area.x;
+                    const dy = y - area.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    const radius = area.r || 5;
+                    if (dist <= radius) {
+                        isHit = true;
+                    }
+                }
 
-                if (dist <= area.r) {
+                if (isHit) {
                     hit = true;
                     // 正解アクション
-                    foundMistake(mistake, area.x, area.y);
+                    foundMistake(mistake, area);
+                    break; // 1つの間違いでエリア複数持っていたとしても1つヒットすればOK
                 }
-            });
-        });
+            }
+            if (hit) break; // ヒットしたら他の間違い判定はしない（オーバーラップ対策）
+        }
 
         if (!hit) {
             // 不正解エフェクト
@@ -337,7 +369,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 未発見の間違いを取得し、X座標(左側)でソート
         const remainingMistakes = mistakes.filter(m => !m.found).sort((a, b) => {
-            return a.areas[0].x - b.areas[0].x;
+            // エリアが複数ある場合、最初のエリアのX座標でソート
+            const xA = a.areas.length > 0 ? a.areas[0].x : 0;
+            const xB = b.areas.length > 0 ? b.areas[0].x : 0;
+            return xA - xB;
         });
 
         if (remainingMistakes.length > 0) {
@@ -349,17 +384,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetMistake = remainingMistakes[hintIndex];
 
             // ターゲットのエリアを表示（下の画像のみ）
-            if (targetMistake.customMarker && targetMistake.customMarker.y >= 50) {
-                // カスタムマーカーがある場合はその中心にヒント表示
-                showHintCircle(targetMistake.customMarker.x, targetMistake.customMarker.y);
-            } else {
-                // 通常は登録エリアごとに表示
-                targetMistake.areas.forEach(area => {
-                    if (area.y >= 50) {
-                        showHintCircle(area.x, area.y);
+            // customMarkerは削除されたので、areaのw/hを考慮
+            targetMistake.areas.forEach(area => {
+                if (area.y >= 50) {
+                    let style = null;
+                    if (area.w && area.h) {
+                        style = { width: area.w + '%', height: area.h + '%' };
                     }
-                });
-            }
+                    showHintCircle(area.x, area.y, style);
+                }
+            });
 
             // 次回のためにインデックスを進める
             hintIndex++;
@@ -371,11 +405,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     });
 
-    function showHintCircle(x, y) {
+    function showHintCircle(x, y, style = null) {
         const hint = document.createElement('div');
         hint.classList.add('hint-circle');
         hint.style.left = x + '%';
         hint.style.top = y + '%';
+
+        if (style) {
+            if (style.width) hint.style.width = style.width;
+            if (style.height) hint.style.height = style.height;
+            // ヒントは丸で統一または大きさを合わせるため、borderRadiusは固定
+            hint.style.borderRadius = '50%'; // 円形ヒント
+        } else {
+            // デフォルトの円形ヒントのサイズ
+            hint.style.width = '10%';
+            hint.style.height = '10%';
+            hint.style.borderRadius = '50%';
+        }
+
         markersLayer.appendChild(hint);
 
         // 3秒後にフェードアウトして削除
@@ -397,15 +444,16 @@ document.addEventListener('DOMContentLoaded', () => {
             mistakes.forEach(mistake => {
                 if (!mistake.found) {
                     // 未発見の間違いを表示 (下の画像のみ)
-                    if (mistake.customMarker && mistake.customMarker.y >= 50) {
-                        createMaru(mistake.customMarker.x, mistake.customMarker.y, true, mistake.customMarker);
-                    } else {
-                        mistake.areas.forEach(area => {
-                            if (area.y >= 50) {
-                                createMaru(area.x, area.y, true); // true for answer mode
+                    // customMarkerは削除されたので、areaのw/hを考慮
+                    mistake.areas.forEach(area => {
+                        if (area.y >= 50) {
+                            let style = null;
+                            if (area.w && area.h) {
+                                style = { width: area.w + '%', height: area.h + '%', borderRadius: '50%' }; // 長丸（楕円）
                             }
-                        });
-                    }
+                            createMaru(area.x, area.y, true, style);
+                        }
+                    });
                 }
             });
             // ボタンを無効化
@@ -414,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function foundMistake(mistake, hx, hy) {
+    function foundMistake(mistake, area) {
         mistake.found = true;
         foundTotal++;
         foundCountEl.textContent = foundTotal;
@@ -439,13 +487,13 @@ document.addEventListener('DOMContentLoaded', () => {
         */
 
         // マルを表示
-        if (mistake.customMarker) {
-            // カスタムマーカー情報があればそれを使って固定位置に表示
-            createMaru(mistake.customMarker.x, mistake.customMarker.y, false, mistake.customMarker);
-        } else {
-            // 通常はクリック位置に表示
-            createMaru(hx, hy);
+        // customMarkerは削除されたので、area情報から表示
+        let style = null;
+        if (area.w && area.h) {
+            style = { width: area.w + '%', height: area.h + '%', borderRadius: '50%' }; // 長丸（楕円）
         }
+        createMaru(area.x, area.y, false, style);
+
 
         // NOTE: 上下両方にマルを出す場合はここで反対側の座標を計算して出すことも可能ですが、
         // 「見つけた場所」にだけ出すのが一般的です。
